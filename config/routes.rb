@@ -1,3 +1,4 @@
+#These are the routes for our application
 Rails.application.routes.draw do
   get 'instructors/index'
 

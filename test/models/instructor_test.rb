@@ -1,3 +1,4 @@
+#These are the tests fot the instructor
 require 'test_helper'
 
 class InstructorTest < ActiveSupport::TestCase

@@ -1,3 +1,4 @@
+#These are the test for courses
 require 'test_helper'
 
 class CourseTest < ActiveSupport::TestCase
