@@ -1,0 +1,19 @@
+<div class="well well-sm">
+<h3>Courses:</h3>
+<p>This is the page for courses</p>
+</div>
+
+<body>
+  <table class = "table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Code</th>
+    </tr>
+    <% @courses.each do |course| %>
+      <tr>
+        <td class = "col-md-6"><%= course.name%></td>
+        <td class = "col-md-6"><%= course.code%></td>
+      </tr>
+    <%end%>
+  </table>
+</body>

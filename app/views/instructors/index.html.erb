@@ -1,0 +1,18 @@
+<div class="well well-sm">
+  <h3>Instructors:</h3>
+  <p>This is the page for instructors:</p>
+</div>
+<body>
+  <table class = "table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <% @instructors.each do |instructor| %>
+      <tr>
+        <td class = "col-md-6"><%= instructor.first_name + " " + instructor.last_name%></td>
+        <td class = "col-md-6"><%= instructor.email%></td>
+      </tr>
+    <%end%>
+  </table>
+</body>

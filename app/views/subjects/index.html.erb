@@ -1,0 +1,19 @@
+<div class="well well-sm">
+  <h3>Subjects:</h3>
+  <p>This is the page for subjects</p>
+</div>
+
+<body>
+  <table class = "table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+    </tr>
+    <% @subjects.each do |subject| %>
+      <tr>
+        <td class = "col-md-6"><%= subject.name%></td>
+        <td class = "col-md-6"><%= subject.subject_id%></td>
+      </tr>
+    <%end%>
+  </table>
+</body>
