@@ -1,5 +1,13 @@
 #These are the routes for our application
 Rails.application.routes.draw do
+  get 'subject_courses/result'
+
+  get 'subject_courses/index'
+
+  resources :subject_courses
+  get 'enrollments/index'
+
+  resources :enrollments
   get 'instructors/index'
 
   get 'subjects/index'

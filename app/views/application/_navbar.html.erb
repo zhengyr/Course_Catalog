@@ -5,10 +5,11 @@
       <a class="navbar-brand" href="#">Course Catalog</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Home", enrollments_path %></li>
       <li><%= link_to "Courses", courses_path %></li>
       <li><%= link_to "Subjects", subjects_path %></li>
       <li><%= link_to "Instructors", instructors_path %></li>
+      <li><%= link_to "Search", subject_courses_path %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if session[:user_id] %>

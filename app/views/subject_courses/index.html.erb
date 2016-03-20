@@ -1,0 +1,19 @@
+<div class="well well-sm">
+  <h3>Search:</h3>
+  <p>Please Search for Your Classes:</p>
+</div>
+
+<%= form_tag subject_courses_result_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+<div class="form-group">
+      <label>Return matching or non-matching items</label>
+      <%= select_tag(:match_no_match,
+            options_for_select(
+            [['only matching', "match"],
+             ['only non matching', "nomatch"]
+            ]), class: "form-control") %>
+</div>

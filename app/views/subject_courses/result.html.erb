@@ -1,0 +1,14 @@
+<body>
+  <table class = "table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Subject</th>
+    </tr>
+    <% @sub_cors.each do |sub_c| %>
+      <tr>
+        <td class = "col-md-6"><%= sub_c.course_name%></td>
+        <td class = "col-md-6"><%= sub_c.subject_name%></td>
+      </tr>
+    <%end%>
+  </table>
+</body>
