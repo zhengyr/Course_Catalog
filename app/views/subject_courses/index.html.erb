@@ -10,7 +10,7 @@
   </p>
   <p>
     <label>Please choose your subject</label>
-    <%= select_tag "subject", options_from_collection_for_select(@sub_names, 'id', 'name'), include_blank: true, class: "btn btn-defaul" %>
+    <%= select_tag "subject", options_from_collection_for_select(@sub_names, 'name', 'name'), include_blank: true, class: "btn btn-defaul" %>
     <%= submit_tag "Search", class: "btn btn-default" %>
   </p>
 <% end %>
