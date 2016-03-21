@@ -4,3 +4,22 @@
 <h3>Welcome to course catalog! <%= @user.name %></h3>
 It's <%= Time.now %>
 </div>
+<div class="well well-sm">
+  <h3>This is the classes you enrolled:</h3>
+</div>
+<body>
+  <table class = "table table-striped">
+    <tr>
+      <th>Class Name</th>
+      <th>Code</th>
+      <th>Details</th>
+    </tr>
+    <% @cor_names.each do |cor| %>
+      <tr>
+        <td class = "col-md-2"><%= cor.name %></td>
+        <td class = "col-md-2"><%= cor.code %></td>
+        <td class = "col-md-8"><%= cor.description %></td>
+      </tr>
+    <%end%>
+  </table>
+</body>

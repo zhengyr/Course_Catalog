@@ -5,15 +5,12 @@
 
 <%= form_tag subject_courses_result_path, :method => 'get' do %>
   <p>
+    <label>Please enter keyword for courses</label>
     <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+  </p>
+  <p>
+    <label>Please choose your subject</label>
+    <%= select_tag "subject", options_from_collection_for_select(@sub_names, 'id', 'name'), include_blank: true, class: "btn btn-defaul" %>
+    <%= submit_tag "Search", class: "btn btn-default" %>
   </p>
 <% end %>
-<div class="form-group">
-      <label>Return matching or non-matching items</label>
-      <%= select_tag(:match_no_match,
-            options_for_select(
-            [['only matching', "match"],
-             ['only non matching', "nomatch"]
-            ]), class: "form-control") %>
-</div>

@@ -1,5 +1,8 @@
 #These are the routes for our application
 Rails.application.routes.draw do
+  post 'enrollments/create'
+
+
   get 'subject_courses/result'
 
   get 'subject_courses/index'

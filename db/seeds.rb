@@ -4,6 +4,8 @@
 Course.delete_all
 Instructor.delete_all
 Subject.delete_all
+Enrollment.delete_all
+SubjectCourse.delete_all
 require 'json'
 file = open('course.json')
 f = file.read
