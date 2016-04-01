@@ -11,6 +11,9 @@ class SubjectCoursesController < ApplicationController
     if not params[:search].nil?
       @sub_cors = @sub_cors.where("course_name LIKE ?", "%#{params[:search]}%")
     end
+    respond_to do |format|
+      format.js
+    end
   end
 
 end

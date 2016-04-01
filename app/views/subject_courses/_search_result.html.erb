@@ -1,0 +1,26 @@
+<h3>Search Results</h3>
+<%if @sub_cors.nil? || @sub_cors.length == 0%>
+	<p>No Matches Found</p>
+<% else %>
+	<p><%= @sub_cors.length %> matches found</p>
+  <body>
+    <table class = "table table-striped">
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Enroll</th>
+      </tr>
+      <% @sub_cors.each do |sub_c| %>
+        <tr>
+          <td class = "col-md-4"><%= sub_c.course_name%></td>
+          <td class = "col-md-4"><%= sub_c.subject_name%></td>
+          <%= form_tag enrollments_create_path, :method => 'post' do %>
+            <%= hidden_field_tag :user_id, this_user.id %>
+            <%= hidden_field_tag :course_id, sub_c.course_id %>
+            <td class = "col-md-4"><%= submit_tag "Enroll", class:"btn btn-default"%></td>
+          <% end %>
+        </tr>
+      <%end%>
+    </table>
+  </body>
+<% end %>
