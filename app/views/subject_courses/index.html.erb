@@ -1,17 +1,17 @@
+
 <div class="well well-sm">
   <h3>Search:</h3>
   <p>Please Search for Your Classes:</p>
 </div>
-<%= form_tag(subject_courses_result_path, method: "get", remote: true, role: "form", class: "form") do %>
+<%= form_tag(subject_courses_result_path, method: "get", remote: true, role: "form", class: "form", id: "special") do %>
   <p>
     <label>Please enter keyword for courses</label>
-    <%= text_field_tag :search, params[:search] %>
+    <%= text_field_tag :search, params[:search], onchange: "$('#special').submit();"%>
   </p>
   <p>
     <label>Please choose your subject</label>
     <%= select_tag "subject", options_from_collection_for_select(@sub_names, 'name', 'name'),
-              include_blank: true, class: "btn btn-defaul"%>
-    <%= submit_tag "Search", class: "btn btn-default" %>
+              include_blank: true, class: "btn btn-defaul", onchange: "$('#special').submit();"%>
   </p>
 <% end %>
 <div id="search_results">
