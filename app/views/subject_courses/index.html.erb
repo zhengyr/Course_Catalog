@@ -5,7 +5,7 @@
 </div>
 <%= form_tag(subject_courses_result_path, method: "get", remote: true, role: "form", class: "form", id: "special") do %>
   <p>
-    <label>Please enter keyword for courses</label>
+    <label>Please enter keyword for courses (Press Enter to Submit)</label>
     <%= text_field_tag :search, params[:search], onchange: "$('#special').submit();"%>
   </p>
   <p>
