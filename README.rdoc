@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+This is a website for course catalog where student is able to sign in and enroll in class
+This project is using ruby on rails, bootstrap, html, css, javascript, json, and ajax. 
 
 * Ruby version
+2.2.3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+*Heroku Webpage
+http://morning-crag-93265.herokuapp.com
