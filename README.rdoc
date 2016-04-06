@@ -1,6 +1,6 @@
 == README
 
-This is a website for course catalog where student is able to sign in and enroll in class. 
+This is a website for course catalog where student is able to sign in and enroll in classs. 
 This project is using ruby on rails, bootstrap, html, css, javascript, json, and ajax. 
 
 * Ruby version
