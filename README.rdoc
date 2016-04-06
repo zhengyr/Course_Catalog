@@ -6,5 +6,5 @@ This project is using ruby on rails, bootstrap, html, css, javascript, json, and
 * Ruby version
 2.2.3
 
-*Heroku Webpage
+* Heroku Webpage
 http://morning-crag-93265.herokuapp.com
